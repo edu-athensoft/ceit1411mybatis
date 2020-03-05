@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.athensoft.dao.ItemMapper">
+
+	<resultMap type="com.athensoft.entity.Item" id="result">
+		<id property="itemId" column="ItemID" />
+		<result property="itemCode" column="ItemCode" />
+		<result property="itemName" column="itemName" />
+	</resultMap>
+
+	<select id="getAllItems" resultMap="result">
+		SELECT * FROM item
+	</select>
+	<select id="getItemById" parameterType="Long" resultMap="result">
+		SELECT * FROM item WHERE ItemID = #{itemId}
+	</select>
+</mapper>

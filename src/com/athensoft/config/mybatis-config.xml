@@ -14,7 +14,7 @@
       </dataSource>
     </environment>
   </environments>
-  <mappers>
-    <mapper resource="com/athensoft/config/ItemMapper.xml"/>
-  </mappers>
+  <!-- <mappers>
+    <mapper resource="com/athensoft/dao/ItemMapper.xml"/>
+  </mappers> -->
 </configuration>
