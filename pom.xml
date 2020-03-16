@@ -26,13 +26,6 @@
 			<version>2.0.0</version>
 		</dependency>
 
-		<!-- mysql -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>5.1.46</version>
-		</dependency>
-
 		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -98,6 +91,18 @@
 			<version>5.2.4.RELEASE</version>
 			<scope>test</scope>
 		</dependency> -->
+		
+		<!-- database -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.46</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mchange</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.5.2</version>
+		</dependency>
 
 	</dependencies>
 	<build>
