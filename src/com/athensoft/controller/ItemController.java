@@ -1,0 +1,27 @@
+package com.athensoft.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.athensoft.entity.Item;
+import com.athensoft.service.ItemService;
+
+@RestController
+@RequestMapping("/item")
+public class ItemController {
+	private ItemService itemService;
+
+	@Autowired
+	public void setItemService(ItemService itemService) {
+		this.itemService = itemService;
+	}
+	
+	@GetMapping("/items/{itemId}")
+	public Item getDataById(@PathVariable Long itemId) {
+		System.out.println("ItemController.getDataById()");
+		return itemService.getItemByIdService(itemId);
+	}
+}
