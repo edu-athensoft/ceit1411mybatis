@@ -24,4 +24,10 @@ public class ItemController {
 		System.out.println("ItemController.getDataById()");
 		return itemService.getItemByIdService(itemId);
 	}
+	
+
+	
+	
+	
+	
 }
