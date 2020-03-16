@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.athensoft.test.entity.Item;
 import com.athensoft.test.service.ItemService;
 
-@RestController
-@RequestMapping("/item")
+//@RestController
+//@RequestMapping("/item")
 public class ItemController {
 	private ItemService itemService;
 
@@ -24,10 +24,4 @@ public class ItemController {
 		System.out.println("ItemController.getDataById()");
 		return itemService.getItemByIdService(itemId);
 	}
-	
-
-	
-	
-	
-	
 }
