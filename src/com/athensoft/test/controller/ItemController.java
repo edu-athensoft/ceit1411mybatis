@@ -1,4 +1,4 @@
-package com.athensoft.controller;
+package com.athensoft.test.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.athensoft.entity.Item;
-import com.athensoft.service.ItemService;
+import com.athensoft.test.entity.Item;
+import com.athensoft.test.service.ItemService;
 
 @RestController
 @RequestMapping("/item")

@@ -1,4 +1,4 @@
-package com.athensoft.dao;
+package com.athensoft.test.dao;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 
-import com.athensoft.entity.Item;
-import com.athensoft.entity.ItemViewObjectItemCategory;
+import com.athensoft.test.entity.Item;
+import com.athensoft.test.entity.ItemViewObjectItemCategory;
 
 public class ItemDaoImpl extends SqlSessionDaoSupport implements ItemDao {
 	private SqlSession sqlSession;

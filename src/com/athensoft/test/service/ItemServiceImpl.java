@@ -1,11 +1,11 @@
-package com.athensoft.service;
+package com.athensoft.test.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.athensoft.dao.ItemMapper;
-import com.athensoft.entity.Item;
+import com.athensoft.test.dao.ItemMapper;
+import com.athensoft.test.entity.Item;
 
 @Transactional
 public class ItemServiceImpl implements ItemService{

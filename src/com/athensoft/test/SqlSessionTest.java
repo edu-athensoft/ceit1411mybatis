@@ -6,9 +6,8 @@ import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 
-
-import com.athensoft.entity.Item;
-import com.athensoft.service.ItemService;
+import com.athensoft.test.entity.Item;
+import com.athensoft.test.service.ItemService;
 
 //@SpringJUnitConfig(locations = {"classpath:com/athensoft/config/spring-config.xml"})
 public class SqlSessionTest {

@@ -1,4 +1,4 @@
-package com.athensoft.dao;
+package com.athensoft.test.dao;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
-import com.athensoft.entity.Item;
-import com.athensoft.entity.ItemViewObjectItemCategory;
+import com.athensoft.test.entity.Item;
+import com.athensoft.test.entity.ItemViewObjectItemCategory;
 
 
 @Mapper

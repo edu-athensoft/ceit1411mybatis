@@ -1,4 +1,4 @@
-package com.athensoft.entity;
+package com.athensoft.test.entity;
 
 import java.io.Serializable;
 
