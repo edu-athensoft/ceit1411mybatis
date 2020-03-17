@@ -11,10 +11,10 @@
  <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>
-	  		classpath:com/athensoft/config/application-context.xml
-	  		classpath:com/athensoft/config/dao-context.xml
-	  		classpath:com/athensoft/config/service-context.xml
-  		</param-value>
+		classpath:com/athensoft/config/application-context.xml
+		classpath:com/athensoft/config/dao-context.xml
+		classpath:com/athensoft/config/service-context.xml
+  	</param-value>
   </context-param>
   <!-- <context-param>
     <param-name>log4jConfigLocation</param-name>
