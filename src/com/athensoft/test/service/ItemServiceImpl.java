@@ -7,7 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.athensoft.test.dao.ItemMapper;
 import com.athensoft.test.entity.Item;
 
-@Transactional
+
 public class ItemServiceImpl implements ItemService{
 	
 	private final ItemMapper itemMapper;

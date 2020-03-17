@@ -2,8 +2,8 @@
 <!DOCTYPE configuration
   PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
-<!-- <configuration>
-  <environments default="development">
+<configuration>
+  <!-- <environments default="development">
     <environment id="development">
       <transactionManager type="JDBC"/>
       <dataSource type="POOLED">
@@ -13,9 +13,8 @@
         <property name="password" value="athensoft2019"/>
       </dataSource>
     </environment>
-  </environments>
+  </environments> -->
   <mappers>
-    <mapper resource="com/athensoft/dao/ItemMapper.xml"/>
+    <mapper resource="com/athensoft/test/dao/ItemMapper.xml"/>
   </mappers>
 </configuration>
- -->
