@@ -30,4 +30,10 @@ public class ItemController {
 		System.out.println("ItemController.getDataByCode()");
 		System.out.println(itemService.getItemByCodeService(itemCode));
 	}
+	
+	@GetMapping("/category-code/{categoryCode}")
+	public void getDataByCategoryCode(@PathVariable String categoryCode) {
+		System.out.println("ItemController.getDataByCategoryCode()");
+		System.out.println(itemService.getItemListByCategoryCodeService(categoryCode));
+	}
 }

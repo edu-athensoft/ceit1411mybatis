@@ -30,7 +30,7 @@ public class ItemServiceImpl implements ItemService{
 	}
 
 	@Override
-	public List<ItemViewObjectItemCategory> getItemByCategoryCodeService(String categoryCode) {
+	public List<ItemViewObjectItemCategory> getItemListByCategoryCodeService(String categoryCode) {
 		return this.itemMapper.getItemListByCategoryCode(categoryCode);
 	}
 

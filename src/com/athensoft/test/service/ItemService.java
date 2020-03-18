@@ -8,5 +8,5 @@ import com.athensoft.test.entity.ItemViewObjectItemCategory;
 public interface ItemService {
 	public Item getItemByIdService(Long itemId);
 	public Item getItemByCodeService(String itemCode);
-	public List<ItemViewObjectItemCategory> getItemByCategoryCodeService(String categoryCode);
+	public List<ItemViewObjectItemCategory> getItemListByCategoryCodeService(String categoryCode);
 }

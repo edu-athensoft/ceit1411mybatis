@@ -29,7 +29,7 @@ public class MyTestController_Mapper {
 		
 		Item itemById = itemService.getItemByIdService(2L);
 		Item itemByCode = itemService.getItemByCodeService("PE1095");
-		List<ItemViewObjectItemCategory> itemListByCategoryCode = itemService.getItemByCategoryCodeService("YQC1045");
+		List<ItemViewObjectItemCategory> itemListByCategoryCode = itemService.getItemListByCategoryCodeService("YQC1045");
 		
 		System.out.println(itemById);
 		System.out.println(itemByCode);
