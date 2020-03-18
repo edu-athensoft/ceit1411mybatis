@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.athensoft.test.entity.Item;
 import com.athensoft.test.service.ItemService;
 
-//@RestController
-//@RequestMapping("/item")
+@RestController
+@RequestMapping("/item")
 public class ItemController {
 	private ItemService itemService;
 
@@ -20,8 +20,8 @@ public class ItemController {
 	}
 	
 	@GetMapping("/items/{itemId}")
-	public Item getDataById(@PathVariable Long itemId) {
+	public void getDataById(@PathVariable Long itemId) {
 		System.out.println("ItemController.getDataById()");
-		return itemService.getItemByIdService(itemId);
+		System.out.println(itemService.getItemByIdService(itemId));
 	}
 }
