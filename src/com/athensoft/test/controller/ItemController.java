@@ -24,4 +24,10 @@ public class ItemController {
 		System.out.println("ItemController.getDataById()");
 		System.out.println(itemService.getItemByIdService(itemId));
 	}
+	
+	@GetMapping("/item-code/{itemCode}")
+	public void getDataByCode(@PathVariable String itemCode) {
+		System.out.println("ItemController.getDataByCode()");
+		System.out.println(itemService.getItemByCodeService(itemCode));
+	}
 }
