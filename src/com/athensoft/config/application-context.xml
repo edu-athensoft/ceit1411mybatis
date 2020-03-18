@@ -59,8 +59,8 @@
 	<bean id="sqlSessionFactory"
 		class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<!-- <property name="mapperLocations" value="classpath:com/athensoft/test/dao/*.xml" />
-   		<property name="configLocation" value="classpath:com/athensoft/config/mybatis-config.xml"/> -->
+		<!-- <property name="mapperLocations" value="classpath:com/athensoft/test/dao/*.xml" 
+			/> <property name="configLocation" value="classpath:com/athensoft/config/mybatis-config.xml"/> -->
 	</bean>
 
 	<bean id="sqlSession"
@@ -68,15 +68,22 @@
 		<constructor-arg index="0" ref="sqlSessionFactory" />
 	</bean>
 
-	<!-- Mapper registering-->
+	<!-- Mapper registering -->
 	<bean id="ItemMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.athensoft.test.dao.ItemMapper" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
 	</bean>
-	<!-- Mapper scanning -->
-	<!-- <mybatis:scan base-package="com.athensoft.test.dao" />  -->
+	<!-- Mapper scanning method 1 -->
+	<!-- <mybatis:scan base-package="com.athensoft.test.dao" /> -->
 	
-	<bean id="ItemService" class="com.athensoft.test.service.ItemServiceImpl">
+	<!-- Mapper scanning method 2 -->
+	<!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.athensoft.test.dao" />
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
+	</bean> -->
+
+	<bean id="ItemService"
+		class="com.athensoft.test.service.ItemServiceImpl">
 		<constructor-arg ref="ItemMapper" />
 	</bean>
 

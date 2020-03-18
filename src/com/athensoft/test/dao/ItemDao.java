@@ -8,6 +8,7 @@ import com.athensoft.test.entity.ItemViewObjectItemCategory;
 
 public interface ItemDao {
 	public Item findById(Long itemId);
-//	public List<ItemViewObjectItemCategory> findByCategoryCode(String categoryCode);
+	public Item findByCode(String itemCode);
+	public List<ItemViewObjectItemCategory> findByCategoryCode(String categoryCode);
 	
 }
