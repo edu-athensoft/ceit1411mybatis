@@ -10,12 +10,12 @@ import com.athensoft.test.dao.ItemMapper;
 import com.athensoft.test.entity.Item;
 import com.athensoft.test.entity.ItemViewObjectItemCategory;
 
-
+@Service
 public class ItemServiceImpl implements ItemService{
+	private ItemMapper itemMapper;
 	
-	private final ItemMapper itemMapper;
-	
-	public ItemServiceImpl(ItemMapper itemMapper) {
+	@Autowired
+	public void setItemMapper(ItemMapper itemMapper) {
 	    this.itemMapper = itemMapper;
 	  }
 	

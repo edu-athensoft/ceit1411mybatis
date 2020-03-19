@@ -69,22 +69,23 @@
 	</bean>
 
 	<!-- Mapper registering -->
-	<bean id="ItemMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+	<!-- <bean id="ItemMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value="com.athensoft.test.dao.ItemMapper" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>
-	<!-- Mapper scanning method 1 -->
-	<!-- <mybatis:scan base-package="com.athensoft.test.dao" /> -->
+	</bean> -->
 	
-	<!-- Mapper scanning method 2 -->
+	<!-- Mapper scanning method 1 -->
+	<mybatis:scan base-package="com.athensoft.test.dao" />
+	
+	<!-- Mapper scanning method 3 -->
 	<!-- <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<property name="basePackage" value="com.athensoft.test.dao" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean> -->
 
-	<bean id="ItemService"
+	<!-- <bean id="ItemService"
 		class="com.athensoft.test.service.ItemServiceImpl">
 		<constructor-arg ref="ItemMapper" />
-	</bean>
+	</bean> -->
 
 </beans>

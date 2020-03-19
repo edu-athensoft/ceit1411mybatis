@@ -5,12 +5,14 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
+import org.mybatis.spring.annotation.MapperScan;
 
 import com.athensoft.test.entity.Item;
 import com.athensoft.test.entity.ItemViewObjectItemCategory;
 
 
 @Mapper
+//@MapperScan
 public interface ItemMapper {
 //	@Select("SELECT * FROM item WHERE ItemID = #{itemId}")
 	public Item getItemById(Long itemId);
