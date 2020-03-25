@@ -15,11 +15,6 @@ public class ItemDaoImpl extends SqlSessionDaoSupport implements ItemDao {
 
 	@Override
 	public Item findById(Long itemId) {
-//		try (SqlSession session = sqlSessionFactory.openSession()) {
-//			Item itemById = session.selectOne("com.athensoft.dao.ItemMapper.getItemById", itemId);
-//			System.out.println(itemById);
-//			return itemById;
-//		}
 		return getSqlSession().selectOne("com.athensoft.dao.ItemMapper.getItemById", itemId);
 	}
 
@@ -34,6 +29,13 @@ public class ItemDaoImpl extends SqlSessionDaoSupport implements ItemDao {
 	public List<ItemViewObjectItemCategory> findByCategoryCode(String categoryCode) {
 		return getSqlSession().selectList("com.athensoft.dao.ItemMapper.getItemListByCategoryCode", categoryCode);
 	}
+
+
+//	@Override
+//	public void create(Item item) {
+//		getSqlSession().insert("com.athensoft.dao.ItemMapper.insertItem", item);
+//		
+//	}
 
 	
 }

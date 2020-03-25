@@ -14,6 +14,26 @@
 		SELECT * FROM item
 	</select>
 	<select id="getItemById" parameterType="Long" resultMap="result">
-		SELECT * FROM item WHERE ItemID = #{itemId}
+		SELECT *
+		FROM item WHERE ItemID = #{itemId}
 	</select>
+
+	<insert id="insertItem">
+		INSERT INTO item(ItemID, ItemCode, ItemName)
+		VALUES(#{itemId}, #{itemCode}, #{itemName})
+	</insert>
+
+	<update id="updateItem">
+		UPDATE item SET
+		ItemCode = #{itemCode},
+		ItemName =
+		#{itemName}
+		WHERE ItemID = #{itemId}
+	</update>
+
+	<delete id="deleteItem">
+		DELETE FROM item WHERE ItemID = #{itemId}
+	</delete>
+
+
 </mapper>

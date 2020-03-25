@@ -34,4 +34,26 @@ public class ItemServiceImpl implements ItemService{
 		return this.itemMapper.getItemListByCategoryCode(categoryCode);
 	}
 
+	@Override
+	public void insertItemService(Item item) {
+		this.itemMapper.insertItem(item);
+		
+	}
+
+	@Override
+	public void updateItemService(Item item) {
+		this.itemMapper.updateItem(item);
+		
+	}
+
+	@Override
+	public void deleteItemService(Item item) {
+		this.itemMapper.deleteItem(item);	
+	}
+
+	@Override
+	public void deleteItemService(Long itemId) {
+		this.itemMapper.deleteItem(itemId);	
+	}
+
 }

@@ -9,4 +9,9 @@ public interface ItemService {
 	public Item getItemByIdService(Long itemId);
 	public Item getItemByCodeService(String itemCode);
 	public List<ItemViewObjectItemCategory> getItemListByCategoryCodeService(String categoryCode);
+	
+	public void insertItemService(Item item);
+	public void updateItemService(Item item);
+	public void deleteItemService(Item item);
+	public void deleteItemService(Long itemId);
 }

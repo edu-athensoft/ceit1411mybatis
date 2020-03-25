@@ -1,3 +1,4 @@
+
 package com.athensoft.test.dao;
 
 import java.util.List;
@@ -10,5 +11,7 @@ public interface ItemDao {
 	public Item findById(Long itemId);
 	public Item findByCode(String itemCode);
 	public List<ItemViewObjectItemCategory> findByCategoryCode(String categoryCode);
+	
+	//public void create(Item item);
 	
 }

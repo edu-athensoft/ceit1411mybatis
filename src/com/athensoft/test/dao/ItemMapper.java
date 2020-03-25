@@ -22,4 +22,9 @@ public interface ItemMapper {
 	
 	@Select("SELECT * FROM view_item_itemCategory WHERE CategoryCode = #{categoryCode}")
 	public List<ItemViewObjectItemCategory> getItemListByCategoryCode(String categoryCode);
+
+	public void insertItem(Item item);
+	public void updateItem(Item item);
+	public void deleteItem(Item item);
+	public void deleteItem(Long itemId);
 }
