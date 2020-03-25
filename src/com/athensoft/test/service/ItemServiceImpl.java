@@ -36,14 +36,12 @@ public class ItemServiceImpl implements ItemService{
 
 	@Override
 	public void insertItemService(Item item) {
-		this.itemMapper.insertItem(item);
-		
+		this.itemMapper.insertItem(item);		
 	}
 
 	@Override
 	public void updateItemService(Item item) {
-		this.itemMapper.updateItem(item);
-		
+		this.itemMapper.updateItem(item);		
 	}
 
 	@Override
@@ -53,7 +51,7 @@ public class ItemServiceImpl implements ItemService{
 
 	@Override
 	public void deleteItemService(Long itemId) {
-		this.itemMapper.deleteItem(itemId);	
+		this.itemMapper.deleteItemById(itemId);	
 	}
 
 }

@@ -18,22 +18,22 @@
 		FROM item WHERE ItemID = #{itemId}
 	</select>
 
-	<insert id="insertItem">
+	<!-- <insert id="insertItem">
 		INSERT INTO item(ItemID, ItemCode, ItemName)
 		VALUES(#{itemId}, #{itemCode}, #{itemName})
-	</insert>
+	</insert> -->
 
-	<update id="updateItem">
+	<!-- <update id="updateItem">
 		UPDATE item SET
 		ItemCode = #{itemCode},
 		ItemName =
 		#{itemName}
 		WHERE ItemID = #{itemId}
-	</update>
+	</update> -->
 
-	<delete id="deleteItem">
+	<!-- <delete id="deleteItem">
 		DELETE FROM item WHERE ItemID = #{itemId}
-	</delete>
+	</delete> -->
 
 
 </mapper>
